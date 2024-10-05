@@ -1,0 +1,144 @@
+@font-face {
+  font-family: "norse";
+  src: url(./Norse-Bold.otf);
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 70px;
+  justify-content: center;
+}
+
+.icon-container * {
+  margin: 0;
+  padding: 0;
+}
+
+
+.right {
+  background-color: #f2f2f2;
+  flex: 0.8;
+}
+
+.form-container {
+  background-color: white;
+  box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.left {
+  font-family: "norse", sans-serif;
+  background-image: url(./img.jpg);
+  flex: 0.2;
+  position: relative;
+  height: 100%;
+  background-size: 100% 100%;
+}
+
+.img-src {
+  font-family: sans-serif;
+  color: white;
+  position: absolute;
+  bottom: 2%;
+  margin: 0 auto;
+  width: 100%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 12px;
+}
+
+.img-src a:link {
+  color: inherit;
+}
+
+.right {
+  position: relative;
+}
+
+.right>p:not(:last-child) {
+  position: relative;
+  font-weight: bold;
+  padding-left: 8%;
+  padding-right: 8%;
+  top: 15%;
+  font-size: 20px;
+}
+
+.form-container {
+  position: relative;
+  padding-top: 1%;
+  top: 15%;
+  padding-bottom: 1%;
+  padding-left: 8%;
+}
+
+.right>p:last-child {
+  position: relative;
+  top: 20%;
+  padding-left: 8%;
+  font-weight: bold;
+
+}
+
+.right>p:last-child a {
+  color: #596D48
+}
+
+button {
+  position: relative;
+  top: 19%;
+  left: 8%;
+  color: white;
+  background-color: #596D48;
+  font-weight: bold;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: none;
+  font-size: 15px;
+}
+
+.form-container p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.input-row {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.input-field {
+  flex: 1;
+}
+
+.input-field label {
+  display: block;
+}
+
+.input-field input {
+  width: 60%;
+  border: 1px solid #E5E7EB;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.input-field input:invalid {
+  border-color: red;
+}
+
+.input-field input:focus {
+  border-color: blue;
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+}

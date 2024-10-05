@@ -1,0 +1,167 @@
+.one {
+  background-color: #1F2937;
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 48px;
+}
+
+.header-link-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.one-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.one-main-left {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 400px;
+  gap: 10px
+}
+
+.one-main-right {
+  background-color: #5e6065;
+  padding: 80px;
+}
+
+.hero-main-text,
+.header-logo-text {
+  color: #F9FAF8;
+  font-size: 48px;
+}
+
+.hero-secondary-text,
+.header-link-text,
+.one-main-right {
+  color: #E5E7EB;
+  font-size: 18px;
+}
+
+.header-logo-text {
+  font-size: 24px;
+}
+
+.hero-main-text {
+  font-weight: bold;
+}
+
+.one-main .one-main-left button {
+  background-color: #3882F6;
+  color: #F9FAF8;
+  font-weight: bold;
+  height: 30px;
+  width: 90px;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #3882F6;
+}
+
+.two {
+  margin-bottom: 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.ele {
+  width: 200px;
+  gap: 10px;
+}
+
+.border {
+  border-color: #3882f6;
+  border-width: 3px;
+  border-style: solid;
+  width: 160px;
+  height: 150px;
+  border-radius: 8px;
+}
+
+.border-text {
+  color: #8d939a;
+}
+
+.information-header {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1F2937;
+  text-align: center;
+  margin: 24px;
+}
+
+.three {
+  background-color: #E5E7EB;
+  padding: 80px 20%;
+}
+
+.quote {
+  font-size: 36px;
+  font-style: italic;
+  color: #1F2937;
+  font-weight: 300;
+}
+
+.author {
+  text-align: end;
+  font-weight: bold;
+}
+
+.call-to-action {
+  background-color: #3882f6;
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-radius: 5px;
+  padding: 20px
+}
+
+.text {
+  color: #F9FAF8;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.call-to-action button {
+  background-color: #3882F6;
+  height: 30px;
+  width: 90px;
+  color: #F9FAF8;
+  font-weight: bold;
+  border-style: solid;
+  border-color: #F9FAF8;
+  border-radius: 5px;
+  align-self: center;
+}
+
+.footer {
+  background-color: #1F2937;
+  padding: 20px;
+}
+
+.end {
+  text-align: center;
+  color: #E5E7EB;
+}

@@ -1,0 +1,97 @@
+body {
+  background-image: url(background.png);
+  background-size: cover;
+  /* 让背景图片覆盖整个页面 */
+  font-family: "Edu AU VIC WA NT Hand";
+}
+
+.header {
+  text-align: center;
+  background-color: rgb(243, 223, 200);
+  height: 150px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 50px;
+  color: rgb(83, 165, 203);
+  border-bottom: 5px solid rgb(83, 165, 203);
+  /* 添加底部边框增加视觉效果 */
+}
+
+.container {
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
+  padding: 20px;
+  /* 添加内边距 */
+}
+
+.book-card {
+  background-color: rgb(208, 221, 237);
+  height: 240px;
+  padding: 15px;
+  display: grid;
+  border-radius: 10px;
+  /* 添加圆角 */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  /* 添加阴影效果 */
+  border: 2px solid rgb(83, 165, 203);
+  /* 添加边框 */
+}
+
+.book-title {
+  font-weight: bold;
+  color: rgb(83, 165, 203);
+  /* 让标题颜色与头部一致 */
+}
+
+button {
+  font-family: "Edu AU VIC WA NT Hand";
+  background-color: rgb(83, 165, 203);
+  /* 按钮的背景颜色 */
+  color: white;
+  /* 按钮的文字颜色 */
+  border: none;
+  /* 移除边框 */
+  padding: 5px 10px;
+  /* 按钮内部的填充空间 */
+  text-align: center;
+  /* 文字居中 */
+  text-decoration: none;
+  /* 移除下划线 */
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  /* 鼠标悬停时变为手形图标 */
+  border-radius: 5px;
+  /* 圆角边框 */
+}
+
+button:hover {
+  background-color: rgb(63, 145, 183);
+  /* 鼠标悬停时的背景颜色 */
+}
+
+dialog {
+  width: 80%;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+dialog form {
+  display: grid;
+  gap: 10px;
+}
+
+dialog menu {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}

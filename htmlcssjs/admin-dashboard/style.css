@@ -1,0 +1,309 @@
+body,
+button {
+  font-family: "Edu AU VIC WA NT Hand";
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 4fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar content-container";
+
+}
+
+.sidebar-container {
+  padding-top: 10px;
+  grid-area: sidebar;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-rows: 0.1fr 0.5fr 1fr;
+  background-color: #38bdf8;
+}
+
+.sidebar-container ul {
+  padding: 0;
+}
+
+.sidebar-container li {
+  padding-top: 15px;
+}
+
+.item-container {
+  padding-left: 30px;
+}
+
+.sidebar-container p {
+  display: inline;
+  color: white;
+  font-weight: bold;
+  padding-left: 10px;
+  vertical-align: middle;
+
+}
+
+.sidebar-container>.item-container:first-child {
+  padding-left: 20px;
+}
+
+.sidebar-container>.item-container:first-child p {
+  font-size: 20px;
+}
+
+.sidebar-container>.item-container:first-child svg {
+  width: 30px;
+}
+
+.sidebar-container svg {
+  width: 20px;
+  vertical-align: middle;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.header-container {
+  grid-area: header;
+}
+
+.content-container {
+  grid-area: content-container;
+}
+
+.header-container {
+  padding-top: 15px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "tl tr"
+    "bl br";
+  padding-left: 30px;
+  padding-right: 30px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.top-right {
+  grid-area: tr;
+  justify-self: end;
+}
+
+.top-left {
+  grid-area: tl;
+}
+
+.top-left svg,
+.top-left input {
+  vertical-align: middle;
+}
+
+.top-left input {
+  width: 80%;
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.bottom-left img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.top-right img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+
+.top-right p {
+  display: inline;
+  margin-top: 5px;
+}
+
+.top-right {
+  display: flex;
+  align-items: start;
+  gap: 60px;
+}
+
+.bottom-right button {
+  background-color: #38bdf8;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 30px;
+  width: 100px;
+}
+
+
+.bottom-left {
+  grid-area: bl;
+  display: flex
+}
+
+.bottom-left img {
+  grid-area: img;
+}
+
+.bottom-right {
+  grid-area: br;
+  justify-self: end;
+}
+
+.header-container svg {
+  width: 30px;
+}
+
+.bottom-left {
+  display: flex;
+}
+
+.bottom-left img {
+  margin-right: 10px;
+}
+
+.bottom-left div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bottom-left p {
+  margin: 0;
+}
+
+.bottom-left p:last-child {
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.bottom-left p:first-child {
+  font-size: 0.8em;
+}
+
+.content-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  grid-template-areas:
+    "projects announcements"
+    "projects trendings";
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #e2e8f0;
+  gap: 15px;
+}
+
+.projects {
+  grid-area: projects;
+
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+
+.announcements {
+  grid-area: announcements;
+}
+
+.trendings {
+  grid-area: trendings;
+}
+
+.project {
+  background-color: #fff;
+  border-radius: 10px;
+  border-left: 7px solid #f59e0b;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  position: relative;
+}
+
+.content-container svg {
+  width: 15px;
+}
+
+.project .svg-container {
+  position: absolute;
+  right: 3px;
+  bottom: 3px;
+  display: flex;
+  gap: 10px;
+}
+
+.project .title {
+  font-weight: bold;
+}
+
+.project .text {
+  font-size: small;
+}
+
+.announcement-container {
+  background-color: white;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.7);
+  padding: 20px;
+}
+
+.announcement-container .title {
+  font-weight: bold;
+}
+
+.announcement {
+  border-bottom: 1px solid black;
+}
+
+.announcement:last-child {
+  border-bottom: none;
+}
+
+.announcement p {
+  margin: 0;
+  font-size: small;
+}
+
+.trendings img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.trend {
+  display: flex;
+}
+
+.trend img {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.trend div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.trend p {
+  margin: 0;
+}
+
+.trend p:last-child {
+  margin-bottom: 10px;
+}
+
+.trend-container {
+  background-color: white;
+  padding: 10px;
+}
